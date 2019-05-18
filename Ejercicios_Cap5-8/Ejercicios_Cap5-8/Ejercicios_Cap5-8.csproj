@@ -123,5 +123,14 @@
   <ItemGroup>
     <None Include="Resources\User_icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_add-512 icon.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

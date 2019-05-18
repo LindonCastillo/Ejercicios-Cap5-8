@@ -28,28 +28,33 @@ namespace Ejercicios_Cap5_8.Capitulo_7
 
         private void Guardar_button_Click(object sender, EventArgs e)
         {
-            string nombre = Convert.ToString(Nombre_textBox.Text);
-            string telefono = Convert.ToString(Telefono_maskedTextBox.Text);
-            MiAgenda.Add(telefono,nombre);
-            LimpiarAgenda();
-            MessageBox.Show("El contacto se guardo en la agenda", "Guardado!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if(Nombre_textBox.Text == string.Empty || Telefono_maskedTextBox.Text == string.Empty)
+            {
+                MessageBox.Show("No puede dejar los campos vacios", "Fallo!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                string nombre = Convert.ToString(Nombre_textBox.Text);
+                string telefono = Convert.ToString(Telefono_maskedTextBox.Text);
+                MiAgenda.Add(telefono,nombre);
+                LimpiarAgenda();
+                MessageBox.Show("El contacto se guardo en la agenda", "Guardado!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
         }
 
         private void Buscar_button_Click(object sender, EventArgs e)
         {
-            bool existeTel;
-            bool existeNom;
+            bool existe;
 
             string nombre = Convert.ToString(Nombre_textBox.Text);
             string telefono = Convert.ToString(Telefono_maskedTextBox.Text);
-            existeTel = MiAgenda.Contains(telefono);
-            existeNom = MiAgenda.Contains(nombre);
+            existe = MiAgenda.Contains(telefono);
 
 
-            if (existeNom == true || existeTel == true)
+            if (existe == true)
             {
-                MiAgenda.Remove(telefono);
-                LimpiarAgenda();
+                Nombre_textBox.Text =Convert.ToString(MiAgenda[telefono]);
                 MessageBox.Show("El contacto se encuentra en la agenda", "Encontrado!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
@@ -81,7 +86,7 @@ namespace Ejercicios_Cap5_8.Capitulo_7
 
         }
 
-        private void Limpiar_button_Click(object sender, EventArgs e)
+        private void Nuevo_button_Click(object sender, EventArgs e)
         {
             LimpiarAgenda();
         }
