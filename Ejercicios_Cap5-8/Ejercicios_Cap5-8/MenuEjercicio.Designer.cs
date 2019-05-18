@@ -96,14 +96,16 @@
             // ejercicio2ToolStripMenuItem
             // 
             this.ejercicio2ToolStripMenuItem.Name = "ejercicio2ToolStripMenuItem";
-            this.ejercicio2ToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.ejercicio2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ejercicio2ToolStripMenuItem.Text = "Ejercicio 2";
+            this.ejercicio2ToolStripMenuItem.Click += new System.EventHandler(this.Ejercicio2ToolStripMenuItem_Click);
             // 
             // ejercicio5ToolStripMenuItem
             // 
             this.ejercicio5ToolStripMenuItem.Name = "ejercicio5ToolStripMenuItem";
-            this.ejercicio5ToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.ejercicio5ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ejercicio5ToolStripMenuItem.Text = "Ejercicio 5";
+            this.ejercicio5ToolStripMenuItem.Click += new System.EventHandler(this.Ejercicio5ToolStripMenuItem_Click);
             // 
             // capitulo8ToolStripMenuItem
             // 
