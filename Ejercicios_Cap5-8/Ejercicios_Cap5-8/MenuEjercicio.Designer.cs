@@ -66,7 +66,7 @@
             // ejercicio4ToolStripMenuItem
             // 
             this.ejercicio4ToolStripMenuItem.Name = "ejercicio4ToolStripMenuItem";
-            this.ejercicio4ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ejercicio4ToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.ejercicio4ToolStripMenuItem.Text = "Ejercicio 4";
             this.ejercicio4ToolStripMenuItem.Click += new System.EventHandler(this.Ejercicio4ToolStripMenuItem_Click);
             // 
@@ -96,14 +96,14 @@
             // ejercicio2ToolStripMenuItem
             // 
             this.ejercicio2ToolStripMenuItem.Name = "ejercicio2ToolStripMenuItem";
-            this.ejercicio2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ejercicio2ToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.ejercicio2ToolStripMenuItem.Text = "Ejercicio 2";
             this.ejercicio2ToolStripMenuItem.Click += new System.EventHandler(this.Ejercicio2ToolStripMenuItem_Click);
             // 
             // ejercicio5ToolStripMenuItem
             // 
             this.ejercicio5ToolStripMenuItem.Name = "ejercicio5ToolStripMenuItem";
-            this.ejercicio5ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ejercicio5ToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.ejercicio5ToolStripMenuItem.Text = "Ejercicio 5";
             this.ejercicio5ToolStripMenuItem.Click += new System.EventHandler(this.Ejercicio5ToolStripMenuItem_Click);
             // 
@@ -119,14 +119,16 @@
             // ejercicio3ToolStripMenuItem
             // 
             this.ejercicio3ToolStripMenuItem.Name = "ejercicio3ToolStripMenuItem";
-            this.ejercicio3ToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.ejercicio3ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ejercicio3ToolStripMenuItem.Text = "Ejercicio 3";
+            this.ejercicio3ToolStripMenuItem.Click += new System.EventHandler(this.Ejercicio3ToolStripMenuItem_Click);
             // 
             // ejercicio5ToolStripMenuItem1
             // 
             this.ejercicio5ToolStripMenuItem1.Name = "ejercicio5ToolStripMenuItem1";
-            this.ejercicio5ToolStripMenuItem1.Size = new System.Drawing.Size(127, 22);
+            this.ejercicio5ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.ejercicio5ToolStripMenuItem1.Text = "Ejercicio 5";
+            this.ejercicio5ToolStripMenuItem1.Click += new System.EventHandler(this.Ejercicio5ToolStripMenuItem1_Click);
             // 
             // FormMenuEjercicio
             // 

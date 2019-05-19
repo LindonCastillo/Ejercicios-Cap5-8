@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Ejercicios_Cap5_8.Capitulo_5;
 using Ejercicios_Cap5_8.Capitulo_7;
+using Ejercicios_Cap5_8.Capitulo_8;
 
 namespace Ejercicios_Cap5_8
 {
@@ -40,6 +41,18 @@ namespace Ejercicios_Cap5_8
         {
             FormEj5_Cap7 formEj5_Cap7 = new FormEj5_Cap7();
             formEj5_Cap7.Show();
+        }
+
+        private void Ejercicio3ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormEj3_Cap8 formEj3_Cap8 = new FormEj3_Cap8();
+            formEj3_Cap8.Show();
+        }
+
+        private void Ejercicio5ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormEj5_Cap8 formEj5_Cap8 = new FormEj5_Cap8();
+            formEj5_Cap8.Show();
         }
     }
 }
