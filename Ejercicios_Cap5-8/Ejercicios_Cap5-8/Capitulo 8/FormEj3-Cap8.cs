@@ -16,5 +16,11 @@ namespace Ejercicios_Cap5_8.Capitulo_8
         {
             InitializeComponent();
         }
+
+        private void HoraFehca_timer_Tick(object sender, EventArgs e)
+        {
+            Hora_label.Text = DateTime.Now.ToString("hh:mm:ss tt");
+            Fecha_label.Text = DateTime.Now.ToString("yyyy/dd/MM");
+        }
     }
 }

@@ -28,30 +28,57 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.components = new System.ComponentModel.Container();
+            this.Hora_label = new System.Windows.Forms.Label();
+            this.Fecha_label = new System.Windows.Forms.Label();
+            this.HoraFehca_timer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
-            // dateTimePicker1
+            // Hora_label
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(71, 115);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(293, 20);
-            this.dateTimePicker1.TabIndex = 0;
+            this.Hora_label.AutoSize = true;
+            this.Hora_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Hora_label.ForeColor = System.Drawing.Color.Lime;
+            this.Hora_label.Location = new System.Drawing.Point(27, 56);
+            this.Hora_label.Name = "Hora_label";
+            this.Hora_label.Size = new System.Drawing.Size(212, 91);
+            this.Hora_label.TabIndex = 0;
+            this.Hora_label.Text = "Hora";
+            // 
+            // Fecha_label
+            // 
+            this.Fecha_label.AutoSize = true;
+            this.Fecha_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Fecha_label.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.Fecha_label.Location = new System.Drawing.Point(61, 147);
+            this.Fecha_label.Name = "Fecha_label";
+            this.Fecha_label.Size = new System.Drawing.Size(131, 46);
+            this.Fecha_label.TabIndex = 1;
+            this.Fecha_label.Text = "Fecha";
+            // 
+            // HoraFehca_timer
+            // 
+            this.HoraFehca_timer.Enabled = true;
+            this.HoraFehca_timer.Tick += new System.EventHandler(this.HoraFehca_timer_Tick);
             // 
             // FormEj3_Cap8
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(424, 280);
-            this.Controls.Add(this.dateTimePicker1);
+            this.ClientSize = new System.Drawing.Size(634, 233);
+            this.Controls.Add(this.Fecha_label);
+            this.Controls.Add(this.Hora_label);
             this.Name = "FormEj3_Cap8";
             this.Text = "Ejercicio 3 - Capitulo 8";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label Hora_label;
+        private System.Windows.Forms.Label Fecha_label;
+        private System.Windows.Forms.Timer HoraFehca_timer;
     }
 }
