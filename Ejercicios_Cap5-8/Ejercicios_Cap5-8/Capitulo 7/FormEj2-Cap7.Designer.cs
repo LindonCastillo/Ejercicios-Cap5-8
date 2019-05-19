@@ -31,8 +31,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Palabra_textBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Definicion_richTextBox = new System.Windows.Forms.RichTextBox();
+            this.Eliminar_button = new System.Windows.Forms.Button();
+            this.Buscar_button = new System.Windows.Forms.Button();
             this.Agregar_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -63,26 +64,41 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Definición";
             // 
-            // richTextBox1
+            // Definicion_richTextBox
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(15, 98);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(341, 160);
-            this.richTextBox1.TabIndex = 3;
-            this.richTextBox1.Text = "";
+            this.Definicion_richTextBox.Location = new System.Drawing.Point(15, 98);
+            this.Definicion_richTextBox.Name = "Definicion_richTextBox";
+            this.Definicion_richTextBox.Size = new System.Drawing.Size(341, 163);
+            this.Definicion_richTextBox.TabIndex = 3;
+            this.Definicion_richTextBox.Text = "";
             // 
-            // button1
+            // Eliminar_button
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = global::Ejercicios_Cap5_8.Properties.Resources.icono;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.Location = new System.Drawing.Point(362, 18);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(138, 59);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Buscar";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.UseVisualStyleBackColor = true;
+            this.Eliminar_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Eliminar_button.Image = global::Ejercicios_Cap5_8.Properties.Resources.delete_icon;
+            this.Eliminar_button.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Eliminar_button.Location = new System.Drawing.Point(362, 180);
+            this.Eliminar_button.Name = "Eliminar_button";
+            this.Eliminar_button.Size = new System.Drawing.Size(97, 65);
+            this.Eliminar_button.TabIndex = 7;
+            this.Eliminar_button.Text = "Eliminar";
+            this.Eliminar_button.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Eliminar_button.UseVisualStyleBackColor = true;
+            this.Eliminar_button.Click += new System.EventHandler(this.Eliminar_button_Click);
+            // 
+            // Buscar_button
+            // 
+            this.Buscar_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Buscar_button.Image = global::Ejercicios_Cap5_8.Properties.Resources.icono;
+            this.Buscar_button.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Buscar_button.Location = new System.Drawing.Point(362, 23);
+            this.Buscar_button.Name = "Buscar_button";
+            this.Buscar_button.Size = new System.Drawing.Size(97, 65);
+            this.Buscar_button.TabIndex = 6;
+            this.Buscar_button.Text = "Buscar";
+            this.Buscar_button.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Buscar_button.UseVisualStyleBackColor = true;
+            this.Buscar_button.Click += new System.EventHandler(this.Buscar_button_Click);
             // 
             // Agregar_button
             // 
@@ -91,20 +107,22 @@
             this.Agregar_button.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Agregar_button.Location = new System.Drawing.Point(362, 98);
             this.Agregar_button.Name = "Agregar_button";
-            this.Agregar_button.Size = new System.Drawing.Size(138, 59);
+            this.Agregar_button.Size = new System.Drawing.Size(97, 65);
             this.Agregar_button.TabIndex = 5;
-            this.Agregar_button.Text = "Guardar";
+            this.Agregar_button.Text = "Agregar";
             this.Agregar_button.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Agregar_button.UseVisualStyleBackColor = true;
+            this.Agregar_button.Click += new System.EventHandler(this.Agregar_button_Click);
             // 
             // FormEj2_Cap7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(523, 273);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(479, 273);
+            this.Controls.Add(this.Eliminar_button);
+            this.Controls.Add(this.Buscar_button);
             this.Controls.Add(this.Agregar_button);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.Definicion_richTextBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Palabra_textBox);
             this.Controls.Add(this.label1);
@@ -120,8 +138,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox Palabra_textBox;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox Definicion_richTextBox;
         private System.Windows.Forms.Button Agregar_button;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Buscar_button;
+        private System.Windows.Forms.Button Eliminar_button;
     }
 }

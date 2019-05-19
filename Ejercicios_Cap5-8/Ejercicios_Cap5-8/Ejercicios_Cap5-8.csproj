@@ -132,5 +132,8 @@
   <ItemGroup>
     <None Include="Resources\application_add-512 icon.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save-icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
